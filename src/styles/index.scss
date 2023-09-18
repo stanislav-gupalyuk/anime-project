@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS";
+}
+
+body {
+  background-image: url("../images/photo-all/fon.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  /*------------- Footer -------------*/
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 15px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    .footer__anime-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 15px;
+      color: #c9c9c9;
+
+      .anidub, .animego, .yummy, .animedia, .animestars {
+        color: #c9c9c9;
+        margin: 5px 10px 5px 10px;
+        transition-duration: 300ms;
+        position: relative;
+        cursor: pointer;
+        letter-spacing: 2px;
+
+        &:hover > .underline {
+          width: 100%;
+        }
+
+        &:hover {
+          color: #fae896;
+        }
+
+        a {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .underline {
+          position: absolute;
+          height: 1px;
+          background-color: #fae896;
+          border-radius: 1px;
+          bottom: -3px;
+          left: 0;
+          width: 0%;
+          transition-duration: 300ms;
+        }
+      }
+    }
+
+    .footer__licence {
+      .licence {
+        text-align: center;
+        font-size: 15px;
+        color: #c9c9c9;
+        letter-spacing: 1px;
+        opacity: 0.5;
+        margin: 5px 10px 5px 10px;
+      }
+    }
+  }
+}
+
+
+/*------------- @MEDIA -------------*/
+@media screen and (max-width: 566px){
+  body {
+    footer {
+      .footer__anime-links {
+        .anidub, .animego, .yummy, .animedia, .animestars {
+          .underline {
+            background-color: #c9c9c9;
+            width: 100%;
+          }
+          &:hover > .underline {
+            background-color: #fae896;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  body {
+    footer {
+      flex-direction: column;
+      .footer__anime-links {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
