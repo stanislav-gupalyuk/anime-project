@@ -1,0 +1,36 @@
+{
+  "name": "anime-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.0"
+  },
+  "browserslist": {
+    "production": [
+      "last 5 version"
+    ],
+    "development": [
+      "last 5 version"
+    ]
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
